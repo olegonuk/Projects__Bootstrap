@@ -2,7 +2,6 @@
 
 body {
    font-family: "Open Sans";
-   background: gray;
 }
 ul,
 li {
@@ -11,6 +10,7 @@ li {
    margin: 0;
 }
 button {
+   cursor: pointer;
    text-transform: uppercase;
 }
 /*== Header Menu ===*/
@@ -70,21 +70,13 @@ button {
    margin: 0px 10px;
    font-size: 20px;
    color: #fff;
-   cursor: pointer;
-   transition: 0.3s;
-}
-.button-empty {
-   background: transparent;
-   border: 2px solid #fff;
-}
-.button-full {
    background: #00897b;
    border: 2px solid #00897b;
+   transition: all 0.3s;
 }
-.button-empty:hover,
-.button-full:hover {
-   border: 2px dotted #fff;
-   background: #04574e;
+.button:hover {
+   background: transparent;
+   border: 2px solid #fff;
 }
 /*== Block About us ==*/
 .block__about {
@@ -151,4 +143,23 @@ button {
    background: transparent;
    font-family: "Open Sans Semibold";
    transition: all 0.3s ease 0s;
+}
+/*== Latest Work ==*/
+.block__portfolio {
+   padding: 120px 0px 135px;
+   text-align: center;
+}
+.block__portfolio .button {
+   padding: 10px 25px;
+}
+.block__portfolio .button:hover {
+   color: #000;
+   background: transparent;
+   border: 2px solid #00897b;
+}
+.block__portfolio img {
+   margin-bottom: 30px;
+}
+.filter {
+   padding: 120px 0px;
 }
