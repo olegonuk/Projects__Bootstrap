@@ -1,6 +1,7 @@
 @import "fonts.css";
 
 body {
+   font-family: "Open Sans";
    background: gray;
 }
 ul,
@@ -9,9 +10,12 @@ li {
    padding: 0;
    margin: 0;
 }
+button {
+   text-transform: uppercase;
+}
 /*== Header Menu ===*/
 .menu-bar {
-   padding: 20px 0;
+   padding: 20px 0px;
    color: #212121;
    background: #fff;
 }
@@ -20,8 +24,8 @@ li {
    cursor: pointer;
 }
 .menu__item a {
-   position: relative;
    font-family: "Open Sans Semibold";
+   position: relative;
    font-size: 20px;
    color: #212121;
    transition: all ease 0.3s 0s;
@@ -44,4 +48,107 @@ li {
 .menu__item a:hover::after {
    transform: scale(1);
    background: #868686;
+}
+/*== Header Hat ==*/
+.header {
+   text-align: center;
+   color: #fff;
+   padding: 180px 0px;
+   background-size: cover;
+   background-position: 0 100%;
+   background-image: url("../img/headr.png");
+}
+.header__title {
+   font-size: 60px;
+}
+.header__text {
+   font-size: 20px;
+   margin-bottom: 100px;
+}
+.button {
+   padding: 15px 40px;
+   margin: 0px 10px;
+   font-size: 20px;
+   color: #fff;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.button-empty {
+   background: transparent;
+   border: 2px solid #fff;
+}
+.button-full {
+   background: #00897b;
+   border: 2px solid #00897b;
+}
+.button-empty:hover,
+.button-full:hover {
+   border: 2px dotted #fff;
+   background: #04574e;
+}
+/*== Block About us ==*/
+.block__about {
+   padding: 125px 0px;
+   color: #000;
+   text-align: center;
+   background: #fff;
+}
+.about-h3 {
+   font-family: "Open Sans Semibold";
+   margin: 30px 0px 20px;
+   font-size: 20px;
+}
+.about__title {
+   font-size: 30px;
+   font-family: "Open Sans Bold";
+   font-weight: bold;
+}
+.about__text {
+   color: #212121;
+   font-size: 16px;
+   margin-bottom: 110px;
+}
+
+/*== Our Services ==*/
+.bloc__services {
+   padding: 165px 0px 125px;
+   color: #000;
+   text-align: center;
+   background: #e4fdf9;
+}
+.our__card {
+   padding: 50px 20px 40px;
+   margin-bottom: 30px;
+   background: #fff;
+   cursor: pointer;
+   transition: all 0.3s ease 0s;
+}
+.our__card:hover {
+   color: #fff;
+   background: #00897b;
+   box-shadow: 0px 10px 12px 3px rgba(0, 0, 0, 0.26);
+}
+.our__card svg {
+   transition: all 0.3s ease 0s;
+}
+.our__card:hover svg {
+   fill: #fff;
+}
+.our__card:hover .button-servisec {
+   color: #fff;
+   border: 2px solid #fff;
+}
+.our__card:hover {
+   color: #fff;
+   background: #00897b;
+   box-shadow: 0px 10px 12px 3px rgba(0, 0, 0, 0.26);
+}
+.button-servisec {
+   color: #000;
+   padding: 10px 15px;
+   margin-top: 30px;
+   border: 2px solid #000;
+   background: transparent;
+   font-family: "Open Sans Semibold";
+   transition: all 0.3s ease 0s;
 }
