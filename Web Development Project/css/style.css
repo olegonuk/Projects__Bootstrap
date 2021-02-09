@@ -314,3 +314,56 @@ div[filter]:hover .text {
 .icons a:hover i:nth-child(2) {
    color: #fff;
 }
+/*== Blog ==*/
+.bloc__blog {
+   padding: 165px 0px 125px;
+   color: #000;
+   text-align: center;
+   background: #e4fdf9;
+}
+.left > div:first-child {
+   order: 1;
+}
+.left > div:last-child {
+   order: 2;
+}
+.right > div:first-child {
+   order: 2;
+}
+.right > div:last-child {
+   order: 1;
+}
+.blog__item {
+   margin: 60px 0px 0px 0px;
+   text-align: left;
+}
+.bloc__blog img {
+   max-width: 100%;
+}
+.blog__item a {
+   font-size: 25px;
+   color: #00897b;
+   font-family: "Open Sans Semibold";
+}
+.blog__item span {
+   font-size: 17px;
+   font-family: "Open Sans Semibold";
+}
+.blog__item i {
+   margin-right: 15px;
+}
+.blog__item div {
+   margin-top: 15px;
+   margin-bottom: 20px;
+}
+.bloc__blog button {
+   margin-top: 120px;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: "Roboto", sans-serif;
+}
+.bloc__blog button:hover {
+   color: #212121;
+   background: transparent;
+   border: 2px solid #212121;
+}
