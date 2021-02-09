@@ -184,3 +184,133 @@ div[filter]:hover .text {
    cursor: pointer;
 }
 /*== Pricing Plan ==*/
+.block__pricing {
+   padding: 165px 0px 125px;
+   color: #000;
+   background: #f0f1f1;
+   text-align: center;
+}
+.price {
+   background: #fff;
+   transition: all 0.3s;
+}
+.price:hover {
+   box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.price__head {
+   max-height: 210px;
+   padding: 40px 0px 60px;
+   color: #fff;
+   font-size: 50px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url("../img/pricing_bg.png");
+}
+.price__head p {
+   font-size: 25px;
+}
+.price__head sub {
+   vertical-align: middle;
+   font-size: 17px;
+}
+.price__head sup {
+   vertical-align: middle;
+   font-size: 25px;
+}
+.price__body {
+   font-size: 17px;
+   color: #212121;
+}
+.price__body ul li {
+   margin: 0 auto;
+   padding: 25px 0px 12px;
+   max-width: 175px;
+   border-bottom: 1px solid #bfbfbf;
+}
+.price__footer {
+   padding: 60px 0px;
+}
+.price__footer button {
+   width: 180px;
+   height: 65px;
+   font-size: 20px;
+   color: #212121;
+
+   text-transform: initial;
+   background: transparent;
+   border: 2px solid #212121;
+   transition: 0.2s;
+}
+.price__footer button:hover {
+   color: #fff;
+   text-transform: uppercase;
+   background: #00897b;
+   border: 2px solid #00897b;
+}
+/*== Our Team Member ==*/
+.block__team {
+   padding: 165px 0px 125px;
+   color: #000;
+   background: #fff;
+   text-align: center;
+}
+/* settings slider */
+.multiple-items .slick-slide {
+   display: flex;
+   flex-direction: column;
+   outline: none;
+}
+.slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 120px;
+}
+.slick-dots li {
+   list-style: none;
+}
+/* Активная точка */
+.slick-dots li.slick-active button {
+   background: #3949ab;
+}
+/* Элемент точки */
+.slick-dots li button {
+   font-size: 0;
+   width: 16px;
+   height: 16px;
+   background: #00897b;
+   border: none;
+   border-radius: 50%;
+   padding: 0;
+   margin: 0 5px;
+   outline: none;
+}
+.block__team h4 {
+   margin-top: 30px;
+   font-size: 20px;
+   font-family: "Open Sans Semibold";
+}
+.block__team p {
+   font-size: 15px;
+   margin-bottom: 30px;
+}
+.block__team .icons {
+   display: flex;
+   justify-content: center;
+}
+.icons a i {
+   transition: 0.3s;
+}
+.icons i:nth-child(1) {
+   color: #f0f1f1;
+}
+.icons i:nth-child(2) {
+   color: #00897b;
+}
+.icons a:hover i:nth-child(1) {
+   color: #3949ab;
+}
+.icons a:hover i:nth-child(2) {
+   color: #fff;
+}
