@@ -1,4 +1,5 @@
 $(document).ready(function () {
+   $('#toTop').fadeOut();
    /*Portfolio */
    $('.button[filter]').click(function () {
       if ($(this).attr('val') == 'off') {
@@ -52,15 +53,10 @@ $(document).ready(function () {
          'display': 'flex',
          'flex-direction': 'column'
       });
-      // if ($('.menu-icon-btn').html() == '<i class="fas fa-bars"></i>') {
-      //    $(this).html('<i class="fas fa-times"></i>');
-      // } else {
-      //    $(this).html('<i class="fas fa-bars"></i>');
-      // }
    });
    /*Button Up */
    $(window).scroll(function () {
-      if ($(this).scrollTop() != 0)
+      if ($(this).scrollTop() > 300)
          $('#toTop').fadeIn();
       else
          $('#toTop').fadeOut();
