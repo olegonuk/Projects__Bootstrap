@@ -12,6 +12,7 @@ li {
 button {
    cursor: pointer;
    text-transform: uppercase;
+   outline: none;
 }
 /*== Header Menu ===*/
 .menu-bar {
@@ -153,7 +154,12 @@ button {
    padding: 120px 0px 135px;
    text-align: center;
 }
-.block__portfolio .button {
+.portfolio-btn {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.portfolio-btn .button {
    padding: 10px 25px;
 }
 .block__portfolio .button:hover,
@@ -297,10 +303,6 @@ div[filter]:hover .text {
    font-size: 20px;
    font-family: "Open Sans Semibold";
 }
-.block__team p {
-   font-size: 15px;
-   margin-bottom: 30px;
-}
 .block__team .icons {
    display: flex;
    justify-content: center;
@@ -344,6 +346,7 @@ div[filter]:hover .text {
    text-align: left;
 }
 .bloc__blog img {
+   width: 100%;
    max-width: 100%;
 }
 .blog__item a {
@@ -472,8 +475,53 @@ div[filter]:hover .text {
 .menu-icon {
    display: none;
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1400px) {
+   .container {
+      max-width: 1320px;
+   }
+   .menu__item a {
+      font-size: 24px;
+   }
+   .about__title {
+      font-size: 60px;
+   }
+   .about__text {
+      font-size: 26px;
+   }
+   .about-h3 {
+      font-size: 36px;
+   }
+   .about-text {
+      font-size: 22px;
+   }
+   .bloc__blog img {
+      width: 100%;
+      max-width: 100%;
+   }
+   .blog__item a {
+      font-size: 48px;
+      color: #00897b;
+      font-family: "Open Sans Semibold";
+   }
+   .blog__item span {
+      font-size: 28px;
+      font-family: "Open Sans Semibold";
+   }
+   .blog__item p {
+      font-size: 26px;
+   }
+}
+@media screen and (max-width: 1199.9px) {
+   .header,
+   .block__about,
+   .bloc__services,
+   .block__portfolio,
+   .block__pricing,
+   .block__team,
+   .bloc__blog,
+   .footer {
+      padding: 80px 10px;
+   }
    nav {
       display: none;
    }
@@ -494,6 +542,9 @@ div[filter]:hover .text {
       margin: 10px 0px;
       text-transform: uppercase;
    }
+   .filter {
+      padding: 80px 0px;
+   }
    .blog__item {
       margin: 10px 0px 0px 0px;
    }
@@ -504,6 +555,17 @@ div[filter]:hover .text {
    .footer input,
    .footer textarea {
       margin: 20px 0px;
+   }
+   .form-btn {
+      display: flex;
+      justify-content: flex-end;
+   }
+}
+@media screen and (max-width: 767.9px) {
+   .portfolio-btn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
    }
 }
 @media screen and (max-width: 480px) {
